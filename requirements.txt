@@ -2,3 +2,4 @@ fastapi
 uvicorn[standard]
 sumy
 nltk
+numpy
