@@ -3,5 +3,5 @@ services:
     name: text-summarization-api
     runtime: python
     plan: free
-    buildCommand: pip install -r requirements.txt && python -m nltk.downloader punkt punkt_tab
+    buildCommand: pip install -r requirements.txt && python -m nltk.downloader -d /opt/render/nltk_data punkt punkt_tab
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
